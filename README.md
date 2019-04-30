@@ -1,3 +1,51 @@
+# React & Redux App on Github Pages
+
+## Installation and configuration
+Follow the steps below
+
+### Create the base react app
+
+* Install react and start it
+```
+npm install -g create-react-app
+
+create-react-app myNewApp
+
+cd myNewApp
+
+npm start
+```
+### Create Git Repo
+```
+git init
+
+git add .
+
+git commit -m 'initial commit'
+
+git remote add origin https://github.com/gurjotmakkar/website.git
+
+git push origin master
+```
+
+### Install gh-pages package
+```
+npm install --save gh-pages
+```
+
+* check **package.json**  
+1. **homepage** specifies the host path where you want to host the application. The template for the URL is: https://[your-user-name].github.io/[your-repo-name]/
+2. **predeploy** specifies the command to build before deployment.
+3. **deploy** specifies which branch and directory to deploy.
+
+
+### deploy the app to Github pages
+```
+npm run deploy
+```
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
